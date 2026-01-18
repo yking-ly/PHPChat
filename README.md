@@ -79,8 +79,6 @@ define('DB_USER', 'your_username');
 define('DB_PASS', 'your_password');
 ```
 
-> ⚠️ **Note:** Never commit `database.php` to version control. It's already in `.gitignore`.
-
 ### Step 4: Start the Server
 Using PHP's built-in server:
 ```bash
@@ -152,31 +150,6 @@ PHPChat/
 - Batch size: 20 messages per load
 - Max message length: 5000 characters
 
-## 🎨 Customization
-
-### Theme Colors
-Edit the CSS custom properties in `assets/css/style.css`:
-```css
-:root {
-    --color-primary: #6366f1;
-    --color-secondary: #8b5cf6;
-    --color-accent: #06b6d4;
-    /* ... more colors */
-}
-```
-
-### Avatar Colors
-Users are assigned random avatar colors on registration. Customize the palette in `api/auth/register.php`:
-```php
-$colors = ['#6366f1', '#8b5cf6', '#ec4899', ...];
-```
-
-## 📱 Responsive Breakpoints
-
-- Desktop: > 768px
-- Tablet/Mobile: ≤ 768px
-- Small Mobile: ≤ 480px
-
 ## 🧪 Testing
 
 1. Register two test accounts
@@ -189,10 +162,3 @@ $colors = ['#6366f1', '#8b5cf6', '#ec4899', ...];
 
 This project is open source and available under the MIT License.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
----
-
-Built with ❤️ using PHP, MySQL, and vanilla JavaScript
